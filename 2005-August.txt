@@ -1,0 +1,69 @@
+From mikael at emu-france.com  Tue Aug  9 17:10:12 2005
+From: mikael at emu-france.com (=?ISO-8859-1?Q?Mika=EBl_Barbero?=)
+Date: Tue, 9 Aug 2005 17:10:12 +0200
+Subject: [Attilathenun-dev] Some links to check and projects to be aware
+Message-ID: <87D8B927-BF14-4244-978B-84A84058DAB4@emu-france.com>
+
+A little document about XMI and UML versions interoperabilty !!!  
+Summary : it's the hell.
+http://jmvanel.free.fr/uml/uml-interop.html
+
+Coral. A big project of metmodel-independant toolkit (actually, just  
+a modeling tool based on MOF, but in its early days, it was  
+uncommon). Written in Python but the core is in C++ (such a shame).
+http://mde.abo.fi/tools/Coral/
+
+Bosco: a code generator tool written in Python. The core is not  
+completly, but it really is the MOF. It uses a template engine :  
+Cheetah which is horrible with a C preprocessor-like syntax.
+Strange thing: the copyright is to Universit? de Nantes !!!! BSD  
+licensed.
+http://bosco.tigris.org/
+
+Pico-world: little software in Python for meta-modeling, code  
+generating and model-tranforming. Based on a simplistic core meta- 
+meta model. May be interresting fo studying.
+http://www.lifl.fr/~marvie/Software.html
+
+The State of Python-XML in 2004: List of most common XML tool in  
+Python. Very interresting. Outdated, but will be updated in october 2005
+http://www.xml.com/pub/a/2004/10/13/py-xml.html
+
+
+Have a nice reading :D
+Mik
+
+
+From cedric.brun at free.fr  Fri Aug 12 06:03:39 2005
+From: cedric.brun at free.fr (=?iso-8859-1?q?C=E9dric_Brun?=)
+Date: Fri, 12 Aug 2005 06:03:39 +0200
+Subject: [Attilathenun-dev] About the overall process..
+Message-ID: <200508120603.40504.cedric.brun@free.fr>
+
+Would it be possible to write a little tutorial explaining the global project  
+and the overall process of the meta model developpement process ?
+I mean, a simple case, with some kind of "clients and orders" explained from 			
+the metamodel definition, to, perhaps,  a  bit of  python code, with each 
+tool used, and then,  we could find names for them ;)
+
+If I understood well, correct me if I'm mistaken, the overall idea is :
+
+describing the client and orders stuff using MOF meta model. (XMI no ?)
+describing python langage using MOF meta model. 
+write transformation rules to go from the client meta model to the python 
+ones.
+try it.
+refine the rules.
+iterate over these operations.
+
+
+Then, if we want to add a specific aspect, for example, "I want a QT ui" , the 
+python code should be modified to reflect this, what is the process then ?  a 
+new "Python+QTUI"  ruleset refining the "Only Python" one ? 
+
+Same question with a second aspect, for example, "I want persistant data".  
+The rulesets should be able to mixed/merge semselves no ?
+
+C?dric
+
+
